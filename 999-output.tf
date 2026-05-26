@@ -3,13 +3,13 @@ output "website_url" {
   description = "The URL of the static website hosted on the S3 bucket"
 }
 output "bucket_name" {
-  value       = aws_s3_bucket.website.bucket
+  value = aws_s3_bucket.website.bucket
 }
 
 output "bucket_arn" {
-  value       = aws_s3_bucket.website.arn
+  value = aws_s3_bucket.website.arn
 }
 
 output "policy" {
-  value       = aws_s3_bucket_policy.allow_public_access_for_all_objects.policy
+  value = aws_s3_bucket_policy.allow_public_access_for_all_objects.policy
 }
